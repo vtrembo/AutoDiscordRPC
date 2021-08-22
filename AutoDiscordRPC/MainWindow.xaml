@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AutoDiscordRPC"
         mc:Ignorable="d"
         Closing="Window_Closing"
-        StateChanged="OnStateChanged" IsVisibleChanged="OnIsVisibleChanged"
+       
           Title="Auto Discord RPC"
         Height="600" Width="920" MinHeight="600" MinWidth="920"
         ResizeMode="CanResize"
