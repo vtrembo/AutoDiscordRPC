@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoDiscordRPC.MVVW.Model
+namespace AutoDiscordRPC.MVVM.Model
 {
     class Presence
     {

@@ -1,5 +1,3 @@
-C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Images\addButton1.png
-C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Images\addButton2.png
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\AutoDiscordRPC.exe
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\AutoDiscordRPC.deps.json
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\AutoDiscordRPC.runtimeconfig.json
@@ -12,7 +10,6 @@ C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Them
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\PresenceCard.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\StylishScrollbar.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\MainWindow.g.cs
-C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\MVVW\View\TrayMenu.g.cs
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC_Content.g.cs
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -20,7 +17,6 @@ C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Auto
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC_MarkupCompile.lref
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\App.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\MainWindow.baml
-C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\MVVW\View\TrayMenu.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.g.resources
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.AssemblyInfoInputs.cache
@@ -31,3 +27,5 @@ C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Auto
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\ref\AutoDiscordRPC.dll
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.pdb
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.genruntimeconfig.cache
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Assets\addButton1.png
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Assets\addButton2.png

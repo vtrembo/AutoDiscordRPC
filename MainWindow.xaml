@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:tb="http://www.hardcodet.net/taskbar" xmlns:viewmodel="clr-namespace:AutoDiscordRPC.MVVW.ViewModel"
-        mc:Ignorable="d"
+        xmlns:tb="http://www.hardcodet.net/taskbar" 
+        xmlns:viewmodel="clr-namespace:AutoDiscordRPC.MVVM.ViewModel"
         Height="600" Width="920" 
         
         Background="#36393F"
@@ -81,8 +81,8 @@
                 </StackPanel>
             </Grid>
         </Border>
-        <tb:TaskbarIcon x:Name="MyNotifyIcon" 
-                            IconSource="/Icons/icon.ico" 
+ <tb:TaskbarIcon x:Name="MyNotifyIcon" 
+                            IconSource="/Assets/icon.ico" 
                             ToolTipText="hello world" />
         <Grid Background="#2F3136"
               Grid.Row="1">
@@ -137,11 +137,11 @@
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
                         <Setter Property="Margin" Value="0,20,0,20"/>
-                        <Setter Property="Source" Value="Images/addButton1.png"/>
+                        <Setter Property="Source" Value="Assets/addButton1.png"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Margin" Value="0,10,0,10"/>
-                                <Setter Property="Source" Value="Images/addButton2.png"/>
+                                <Setter Property="Source" Value="Assets/addButton2.png"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>

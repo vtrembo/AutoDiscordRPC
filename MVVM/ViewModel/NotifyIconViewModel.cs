@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace AutoDiscordRPC.MVVW.ViewModel
+namespace AutoDiscordRPC.MVVM.ViewModel
 {
     public class NotifyIconViewModel
     {

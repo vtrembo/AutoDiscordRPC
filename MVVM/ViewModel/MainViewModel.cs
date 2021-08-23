@@ -1,4 +1,4 @@
-﻿using AutoDiscordRPC.MVVW.Model;
+﻿using AutoDiscordRPC.MVVM.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoDiscordRPC.MVVW.ViewModel
+namespace AutoDiscordRPC.MVVM.ViewModel
 {
     class MainViewModel
     {

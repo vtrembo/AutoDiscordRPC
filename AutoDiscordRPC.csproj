@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <None Remove=".gitattributes" />
-    <None Remove="Icons\icon.ico" />
-    <None Remove="Images\addButton1.png" />
-    <None Remove="Images\addButton2.png" />
     <None Remove="LICENSE" />
   </ItemGroup>
 
@@ -19,22 +16,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Images\addButton1.png">
+    <Content Include="Assets\addButton1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\addButton2.png">
+    <Content Include="Assets\addButton2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Icons\icon.ico">
+    <Resource Include="Assets\icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Fonts\" />
+    <Folder Include="MVVM\View\" />
   </ItemGroup>
 
 </Project>
