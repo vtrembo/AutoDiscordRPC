@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "awkNUF9iz0lQRI/CZ/hYe7kT/KuSCe4fyrexpfai98IhxMcBnpE/nA1L+u8yb8scL9xAt8FY/xAay5kJlUsqNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\AutoDiscordRPC\\AutoDiscordRPC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sweaz\\.nuget\\packages\\hardcodet.notifyicon.wpf\\1.1.0\\hardcodet.notifyicon.wpf.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
