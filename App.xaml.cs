@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hardcodet.Wpf.TaskbarNotification;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -16,11 +17,11 @@ namespace AutoDiscordRPC
     public partial class App : Application
     {
 
-
+        private TaskbarIcon notifyIcon;
         protected override void OnStartup(StartupEventArgs e)
         {
-           // System.Diagnostics.Process process = System.Diagnostics.Process.Start(@"C:\Sweazy\FUN\Heroes 3\Hota\HotA_launcher.exe");
-
+            // System.Diagnostics.Process process = System.Diagnostics.Process.Start(@"C:\Sweazy\FUN\Heroes 3\Hota\HotA_launcher.exe");
+            notifyIcon = (TaskbarIcon)FindResource("NotifyIcon");
             MainWindow = new MainWindow();
             MainWindow.Show();
 

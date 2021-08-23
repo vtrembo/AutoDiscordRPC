@@ -9,7 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/PresenceCard.xaml"/>
                 <ResourceDictionary Source="/Themes/StylishScrollbar.xaml"/>
-
+                <ResourceDictionary Source="/Themes/NotifyIconResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
