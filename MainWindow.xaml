@@ -81,7 +81,9 @@
                 </StackPanel>
             </Grid>
         </Border>
-
+        <tb:TaskbarIcon x:Name="MyNotifyIcon" 
+                            IconSource="/Icons/icon.ico" 
+                            ToolTipText="hello world" />
         <Grid Background="#2F3136"
               Grid.Row="1">
             
@@ -147,6 +149,10 @@
             </Image>
 
         </Button>
+        
+        
+        
+        
     </Grid>
 
 </Window>
