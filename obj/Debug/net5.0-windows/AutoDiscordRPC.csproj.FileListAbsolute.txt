@@ -30,3 +30,6 @@ C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Auto
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Images\addButton1.png
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\PresenceCard.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\App.baml
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\StylishScrollbar.baml
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\NotifyIconResources.baml
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Icons\icon.ico

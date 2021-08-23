@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\App.xaml
-3-1356159187
-2-2136694139
-9-2127945675
+5-2025892173
+31177662750
+10-709007905
 203646450158
-MainWindow.xaml;MVVW\View\TrayMenu.xaml;Themes\PresenceCard.xaml;
+MainWindow.xaml;MVVW\View\TrayMenu.xaml;Themes\NotifyIconResources.xaml;Themes\PresenceCard.xaml;Themes\StylishScrollbar.xaml;
 
 False
 

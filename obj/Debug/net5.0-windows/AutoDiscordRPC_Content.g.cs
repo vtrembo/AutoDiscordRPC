@@ -10,5 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/addbutton1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/addbutton2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/icon.ico")]
 
 
