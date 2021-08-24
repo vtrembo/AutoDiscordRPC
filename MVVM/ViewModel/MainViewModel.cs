@@ -1,4 +1,5 @@
-﻿using AutoDiscordRPC.MVVM.Model;
+﻿using AutoDiscordRPC.Core;
+using AutoDiscordRPC.MVVM.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,12 +9,30 @@ using System.Threading.Tasks;
 
 namespace AutoDiscordRPC.MVVM.ViewModel
 {
-    class MainViewModel
+    class MainViewModel : ObservableObject
     {
         public ObservableCollection<Presence> Presences { get; set; }
 
+        public HomeViewModel HomeVM { get; set; }
+
+        private object _currentView;
+
+        public object CurrentView
+        {
+            get { return _currentView;  }
+            set
+            {
+                _currentView = value;
+                OnPropertyChanged();             
+            }
+        }
+
         public MainViewModel()
         {
+            HomeVM = new HomeViewModel();
+            CurrentView = HomeVM;
+
+
             Presences = new ObservableCollection<Presence>();
 
             Presences.Add(new Presence

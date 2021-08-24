@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:AutoDiscordRPC"
-             >
+             xmlns:viewModel="clr-namespace:AutoDiscordRPC.MVVM.ViewModel"
+             xmlns:view="clr-namespace:AutoDiscordRPC.MVVM.View">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -11,6 +12,9 @@
                 <ResourceDictionary Source="/Themes/StylishScrollbar.xaml"/>
                 <ResourceDictionary Source="/Themes/NotifyIconResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

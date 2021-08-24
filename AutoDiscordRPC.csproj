@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove=".gitattributes" />
+    <None Remove="Fonts\Poppins-Regular.ttf" />
     <None Remove="LICENSE" />
   </ItemGroup>
 
@@ -29,11 +30,9 @@
     <Resource Include="Assets\icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Fonts\" />
-    <Folder Include="MVVM\View\" />
+    <Resource Include="Fonts\Poppins-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
