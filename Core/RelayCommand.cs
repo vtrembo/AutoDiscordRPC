@@ -3,10 +3,10 @@ using System.Windows.Input;
 
 namespace AutoDiscordRPC.Core
 {
-    class RelayCommand : ICommand
+    public class RelayCommand : ICommand
     {
-        private Action<object> _execute;
-        private Func<object, bool> _canExecute;
+        public Action<object> _execute;
+        public Func<object, bool> _canExecute;
 
         public event EventHandler CanExecuteChanged
         {
@@ -19,7 +19,6 @@ namespace AutoDiscordRPC.Core
             _execute = execute;
             _canExecute = canExecute;
         }
-
         public bool CanExecute(object parameter) 
         {
             return _canExecute == null || _canExecute(parameter);

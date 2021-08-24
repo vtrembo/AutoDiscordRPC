@@ -8,6 +8,7 @@ C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Auto
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\ref\AutoDiscordRPC.dll
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\AutoDiscordRPC.pdb
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Hardcodet.NotifyIcon.Wpf.dll
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.csprojAssemblyReference.cache
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\PresenceCard.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\Themes\StylishScrollbar.baml
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\MainWindow.g.cs
