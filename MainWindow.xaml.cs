@@ -58,7 +58,12 @@ namespace AutoDiscordRPC
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            Application.Current.MainWindow.Hide();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.MainWindow.Hide();
         }
     }
 }

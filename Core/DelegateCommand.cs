@@ -15,7 +15,7 @@ namespace AutoDiscordRPC.Core
         {
             CommandAction();
         }
-
+        
         public bool CanExecute(object parameter)
         {
             return CanExecuteFunc == null  || CanExecuteFunc();

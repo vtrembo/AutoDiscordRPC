@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AutoDiscordRPC.Core
 {
-    class ObservableObject : INotifyPropertyChanged
+    public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)

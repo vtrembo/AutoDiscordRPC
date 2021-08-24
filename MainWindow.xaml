@@ -6,7 +6,8 @@
         xmlns:tb="http://www.hardcodet.net/taskbar" 
         xmlns:viewmodel="clr-namespace:AutoDiscordRPC.MVVM.ViewModel"
         Height="600" Width="920" 
-        
+        WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing"
         Background="#36393F"
         WindowStyle="None"
         AllowsTransparency="True"   
