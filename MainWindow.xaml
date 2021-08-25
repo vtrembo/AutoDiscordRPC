@@ -51,10 +51,10 @@
 
             <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="860*"/>
-                    <ColumnDefinition Width="20*"/>
-                    <ColumnDefinition Width="20*"/>
-                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="830*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="30*"/>
                 </Grid.ColumnDefinitions>
 
                 <Viewbox Stretch="Uniform"
@@ -105,7 +105,7 @@
                             </Setter>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="DarkRed"/>
+                                    <Setter Property="Background" Value="#ED4245"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
