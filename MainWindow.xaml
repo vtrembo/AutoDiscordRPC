@@ -34,13 +34,13 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="575*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="180"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         
@@ -50,36 +50,68 @@
                 MouseDown="Border_MouseDown">
 
             <Grid HorizontalAlignment="Stretch">
-                <Label Content="Auto Discord RPC"
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="860*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+
+                <Viewbox Stretch="Uniform"
+                         HorizontalAlignment="Left"
+                         Margin="8,0,0,0">
+                    <Label Content="Auto Discord RPC"
                        Foreground="Gray"
-                       FontWeight="SemiBold"/>
-                <StackPanel HorizontalAlignment="Right"
-                            Orientation="Horizontal">
-                    
-                    <Button Width="20" Height="20"
+                       FontWeight="SemiBold" 
+                           FontSize="16"/>
+                </Viewbox>
+                <Button Grid.Column="1"
+                            FontSize="14"
                             Content="—"
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
                             FontWeight="Bold"
                             Click="ButtonMinimazie_Click"/>
-                    
-                    <Button Width="20" Height="20"
+
+                    <Button Grid.Column="2"
+                            FontSize="15"
                             Content="☐"
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
                             FontWeight="Bold"
                             Click="WindowStateButton_Click"/>
-                    
-                    <Button Width="20" Height="20"
-                            Content="❌"
-                            Background="Transparent"
+
+
+                <Button Grid.Column="3" 
+                            FontSize="17"
+                            Content="✕"
                             BorderThickness="0"
                             Foreground="Gray"
                             FontWeight="Bold"
-                            Click="CloseButton_Click"/>
-                </StackPanel>
+                            Click="CloseButton_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="DarkRed"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
             </Grid>
         </Border>
  
@@ -87,9 +119,9 @@
               Grid.Row="1">
             
             <Grid.RowDefinitions>
-                <RowDefinition Height="60*" MinHeight="60"/>
+                <RowDefinition Height="60*" MinHeight="60" MaxHeight="60"/>
                 <RowDefinition Height="455*" MinHeight="120"/> 
-                <RowDefinition Height="60*" MinHeight="60"/>
+                <RowDefinition Height="60*" MinHeight="60" MaxHeight="60"/>
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Row="0"
@@ -149,11 +181,16 @@
 
         </Button>
 
-
-        <ContentControl Grid.Row="1"
-                        Grid.Column="1"
+        <Border Grid.Row="1"
+                Grid.Column="1"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+            <ContentControl 
                         Margin="10"
+                        Width="Auto"
                         Content="{Binding CurrentView}"/>
+        </Border>
+       
 
     </Grid>
 
