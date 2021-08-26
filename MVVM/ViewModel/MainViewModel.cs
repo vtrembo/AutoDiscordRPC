@@ -11,9 +11,14 @@ namespace AutoDiscordRPC.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
+
+        public RelayCommand HomeViewCommand { get; set; }
+        public RelayCommand CreateViewCommand { get; set; }
         public ObservableCollection<Presence> Presences { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
+
+        public CreateViewModel CreateVM { get; set; }
 
         private object _currentView;
 
@@ -30,8 +35,18 @@ namespace AutoDiscordRPC.MVVM.ViewModel
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
+            CreateVM = new CreateViewModel();
             CurrentView = HomeVM;
 
+            CreateViewCommand = new RelayCommand(o => 
+            {
+                CurrentView = CreateVM;
+            });
+
+            HomeViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = HomeVM;
+            });
 
             Presences = new ObservableCollection<Presence>();
 

@@ -10,6 +10,25 @@
     <!--12-->
     
     <Grid Margin="10">
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240*"/>
+            <ColumnDefinition Width="240*"/>
+            <ColumnDefinition Width="240*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="1" Margin="8"
+                 Foreground="White"
+                 Background="Gray"
+                 Style="{StaticResource ModernTextbox}"/>
     </Grid>
 </UserControl>

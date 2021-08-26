@@ -10,10 +10,14 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/PresenceCard.xaml"/>
                 <ResourceDictionary Source="/Themes/StylishScrollbar.xaml"/>
-                <ResourceDictionary Source="/Themes/NotifyIconResources.xaml" />
+                <ResourceDictionary Source="/Themes/NotifyIconResources.xaml"/>
+                <ResourceDictionary Source="/Themes/ModernTextbox.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:CreateViewModel}">
+                <view:CreateView/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

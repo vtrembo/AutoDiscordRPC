@@ -29,7 +29,7 @@ namespace AutoDiscordRPC
         private void createButtonClick(object sender, RoutedEventArgs e)
         {
 
-
+            
             System.Diagnostics.Process process = System.Diagnostics.Process.Start(@"C:\Sweazy\FUN\Heroes 3\Hota\HotA_launcher.exe");
 
         }

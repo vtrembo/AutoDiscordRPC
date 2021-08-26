@@ -153,7 +153,6 @@
                         Background="#3bff6f"
                         Margin="18,0,0,0"/>
             </StackPanel>
-
         </Grid>
         
         <Button Grid.Column="0"
@@ -163,7 +162,9 @@
                 VerticalAlignment="Top"
                 Margin="70,0,0,0"
                 Style="{StaticResource ImageButtonStyle}"
-                    Click="createButtonClick">
+                Click="createButtonClick"
+                Command="{Binding CreateViewCommand}">
+            
             <Image>
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
@@ -181,16 +182,11 @@
 
         </Button>
 
-        <Border Grid.Row="1"
-                Grid.Column="1"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
-            <ContentControl 
+        <ContentControl Grid.Row="1"
+                        Grid.Column="1"
                         Margin="10"
-                        Width="Auto"
+                        Width="Auto" 
                         Content="{Binding CurrentView}"/>
-        </Border>
-       
 
     </Grid>
 
