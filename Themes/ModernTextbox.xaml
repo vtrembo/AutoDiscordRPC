@@ -5,44 +5,41 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    
-                        <Grid>
-                            <Rectangle StrokeThickness="1"/>
+                    <Grid>
+                        <Rectangle StrokeThickness="1"/>
                         <TextBox Margin="1"
-                                     Text="{TemplateBinding Text}"
                                      BorderThickness="0"
                                      Background="#353340"
                                      VerticalContentAlignment="Center"
                                      Padding="5" 
                                      Foreground="#CFCFCF"
-                                     x:Name="PresenceNameBox">
+                                     x:Name="PresenceBox">
                             <TextBox.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="10"/>
                                 </Style>
                             </TextBox.Resources>
                         </TextBox>
-                            <TextBlock IsHitTestVisible="False"      
-                                       Text="Presence Name"
+                        <TextBlock IsHitTestVisible="False"      
+                                       Text="{TemplateBinding Text}"
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Left"
                                        Margin="10,0,0,0"
                                        FontSize="11"
                                        Foreground="DarkGray"
                                        Grid.Column="1">
-                                <TextBlock.Style>
-                                    <Style TargetType="{x:Type TextBlock}">
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Text, ElementName=PresenceNameBox}" Value="">
-                                                <Setter Property="Visibility" Value="Visible"/>
-                                            </DataTrigger>
-                                        </Style.Triggers>
-                                        <Setter Property="Visibility" Value="Hidden"/>
-                                    </Style>
-                                </TextBlock.Style>
-                            </TextBlock>
-                        </Grid>
-                    
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, ElementName=PresenceBox}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                    <Setter Property="Visibility" Value="Hidden"/>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

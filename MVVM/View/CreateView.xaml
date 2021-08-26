@@ -27,12 +27,10 @@
         </Grid.RowDefinitions>
 
         <TextBox Grid.Row="1" Grid.Column="0" Margin="8"
-                 Foreground="White"
-                 Background="Gray"
+                 Text="Presence Name"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="1" Grid.Column="1" Margin="8"
-                 Foreground="White"
-                 Background="Gray"
+                 Text="Application ID"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="1" Grid.Column="2" Margin="8"
                  Foreground="White"
