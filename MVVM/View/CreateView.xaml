@@ -29,6 +29,15 @@
         <TextBox Grid.Row="1" Grid.Column="0" Margin="8"
                  Text="Presence Name"
                  Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Margin="8"
+                 Text="Presence Name"
+                 Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Margin="8"
+                 Text="Presence Name"
+                 Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="4" Grid.Column="0" Margin="8"
+                 Text="Presence Name"
+                 Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="1" Grid.Column="1" Margin="8"
                  Text="Application ID"
                  Style="{StaticResource ModernTextbox}"/>
