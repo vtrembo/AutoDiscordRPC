@@ -26,7 +26,15 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="1" Margin="8"
+        <TextBox Grid.Row="1" Grid.Column="0" Margin="8"
+                 Foreground="White"
+                 Background="Gray"
+                 Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="8"
+                 Foreground="White"
+                 Background="Gray"
+                 Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Margin="8"
                  Foreground="White"
                  Background="Gray"
                  Style="{StaticResource ModernTextbox}"/>

@@ -5,19 +5,23 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border CornerRadius="10"
-                            Background="#353340"
-                            Width="200">
+                    
                         <Grid>
                             <Rectangle StrokeThickness="1"/>
-                            <TextBox Margin="1"
+                        <TextBox Margin="1"
                                      Text="{TemplateBinding Text}"
                                      BorderThickness="0"
-                                     Background="Transparent"
+                                     Background="#353340"
                                      VerticalContentAlignment="Center"
-                                     Padding="5"
+                                     Padding="5" 
                                      Foreground="#CFCFCF"
-                                     x:Name="PresenceNameBox"/>
+                                     x:Name="PresenceNameBox">
+                            <TextBox.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
                             <TextBlock IsHitTestVisible="False"      
                                        Text="Presence Name"
                                        VerticalAlignment="Center"
@@ -38,7 +42,7 @@
                                 </TextBlock.Style>
                             </TextBlock>
                         </Grid>
-                    </Border>
+                    
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
