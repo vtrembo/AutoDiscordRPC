@@ -6,10 +6,10 @@
              xmlns:local="clr-namespace:AutoDiscordRPC.MVVM.View"
              mc:Ignorable="d" 
              Background="Wheat"
-             d:DesignHeight="575" d:DesignWidth="740">
+             d:DesignHeight="575" d:DesignWidth="720">
     <!--12-->
     
-    <Grid Margin="10">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="240*"/>
             <ColumnDefinition Width="240*"/>
@@ -30,16 +30,50 @@
                  Text="Presence Name"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="2" Grid.Column="0" Margin="8"
-                 Text="Presence Name"
+                 Text="Description 1 (optional)"
+                 Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="8"
+                 Text="Description 2 (optional)"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="3" Grid.Column="0" Margin="8"
-                 Text="Presence Name"
+                 Text="Large Image Name"
+                 Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="8"
+                 Text="Large Image Text (optional)"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="4" Grid.Column="0" Margin="8"
-                 Text="Presence Name"
+                 Text="Small Image Name (optional)"
                  Style="{StaticResource ModernTextbox}"/>
-        <TextBox Grid.Row="5" Grid.Column="0" Margin="8"
-                 Text="Application ID"
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="8"
+                 Text="Small Image Text (optional)"
+                 Style="{StaticResource ModernTextbox}"/>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <CheckBox HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      />
+            <TextBox Grid.Column="1" Margin="8"
+                 Text="Button 1 URL"
+                 Style="{StaticResource ModernTextbox}"/>
+        </Grid>
+        <TextBox Grid.Row="5" Grid.Column="1" Margin="8"
+                 Text="Button 1 Text"
+                 Style="{StaticResource ModernTextbox}"/>
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="1" Margin="8"
+                 Text="Button 2 URL"
+                 Style="{StaticResource ModernTextbox}"/>
+        </Grid>
+        <TextBox Grid.Row="6" Grid.Column="1" Margin="8"
+                 Text="Button 2 Text"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="1" Grid.Column="1" Margin="8"
                  Text="Application ID"

@@ -24,6 +24,9 @@
     <Page Update="MVVM\View\HomeView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\CheckBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\ModernTextbox.xaml">
       <SubType>Designer</SubType>
     </Page>
