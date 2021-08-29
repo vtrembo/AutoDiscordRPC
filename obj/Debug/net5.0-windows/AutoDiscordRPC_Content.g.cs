@@ -10,5 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/addbutton1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/addbutton2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/infobox.png")]
 
 
