@@ -39,5 +39,8 @@
     <Page Update="Themes\StylishScrollbar.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\ToggleButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

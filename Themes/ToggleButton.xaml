@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="{x:Type ToggleButton}"
+           x:Key="ModernToggleButton">
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Grid>
+                        <Rectangle x:Name="frame"
+                               Fill="{TemplateBinding Background}"
+                               Stroke="{TemplateBinding BorderBrush}"
+                               StrokeThickness="2" Height="20" RadiusX="10" RadiusY="10"/>
+
+                        <Ellipse x:Name="thumb"
+                             Fill="{TemplateBinding BorderBrush}"
+                             HorizontalAlignment="Left" Margin="5"
+                             Width="10" Height="10"/>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="frame" Property="Stroke" Value="LightGreen"/>
+                            <Setter TargetName="frame" Property="Fill" Value="LightGreen"/>
+                            <Setter TargetName="thumb" Property="Fill" Value="White"/>
+                            <Setter TargetName="thumb" Property="HorizontalAlignment"
+                                Value="Right"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

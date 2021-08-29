@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="/Themes/NotifyIconResources.xaml"/>
                 <ResourceDictionary Source="/Themes/ModernTextbox.xaml"/>
                 <ResourceDictionary Source="/Themes/CheckBox.xaml"/>
+                <ResourceDictionary Source="/Themes/ToggleButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -23,6 +24,32 @@ namespace AutoDiscordRPC.MVVM.View
         public CreateView()
         {
             InitializeComponent();
+        }
+        private void ToggleButton1_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)(sender as ToggleButton).IsChecked)
+            {
+                Button1URL.IsEnabled = true;
+                Button1Text.IsEnabled = true;
+            }
+            else
+            {
+                Button1URL.IsEnabled = false;
+                Button1Text.IsEnabled = false;
+            }
+        }
+        private void ToggleButton2_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)(sender as ToggleButton).IsChecked)
+            {
+                Button2URL.IsEnabled = true;
+                Button2Text.IsEnabled = true;
+            }
+            else
+            {
+                Button2URL.IsEnabled = false;
+                Button2Text.IsEnabled = false;
+            }
         }
     }
 }

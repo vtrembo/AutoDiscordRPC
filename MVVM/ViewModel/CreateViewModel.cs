@@ -8,5 +8,6 @@ namespace AutoDiscordRPC.MVVM.ViewModel
 {
     class CreateViewModel
     {
+
     }
 }
