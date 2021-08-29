@@ -12,6 +12,7 @@
                 <ResourceDictionary Source="/Themes/StylishScrollbar.xaml"/>
                 <ResourceDictionary Source="/Themes/NotifyIconResources.xaml"/>
                 <ResourceDictionary Source="/Themes/ModernTextbox.xaml"/>
+                <ResourceDictionary Source="/Themes/CheckBox.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>
