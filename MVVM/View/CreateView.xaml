@@ -26,6 +26,19 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
+        <Button Content="Developer Portal"
+                Background="LightBlue"
+                Margin="20"
+                Click="ButtonDevPortal_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
         <TextBox Grid.Row="1" Grid.Column="0" Margin="8"
                  Text="Presence Name"
                  Style="{StaticResource ModernTextbox}"/>
