@@ -29,6 +29,9 @@
         <TextBox Grid.Row="1" Grid.Column="0" Margin="8"
                  Text="Presence Name"
                  Style="{StaticResource ModernTextbox}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="8"
+                 Text="Application ID"
+                 Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="2" Grid.Column="0" Margin="8"
                  Text="Description 1 (optional)"
                  Style="{StaticResource ModernTextbox}"/>
@@ -36,7 +39,7 @@
                  Text="Description 2 (optional)"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="3" Grid.Column="0" Margin="8"
-                 Text="Large Image Name"
+                 Text="Large Image Name (optional)"
                  Style="{StaticResource ModernTextbox}"/>
         <TextBox Grid.Row="3" Grid.Column="1" Margin="8"
                  Text="Large Image Text (optional)"
@@ -49,39 +52,92 @@
                  Style="{StaticResource ModernTextbox}"/>
         <Grid Grid.Row="5">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="65"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <CheckBox HorizontalAlignment="Center"
-                      VerticalAlignment="Center"
-                      />
-            <TextBox Grid.Column="1" Margin="8"
-                 Text="Button 1 URL"
-                 Style="{StaticResource ModernTextbox}"/>
+            <ToggleButton x:Name="ToggleButton1"
+                Style="{StaticResource ModernToggleButton }"
+                Click="ToggleButton1_Click" Margin="5,0,-5,0"
+                />
+            <TextBox x:Name="Button1URL"
+                     Grid.Column="1" Margin="8"
+                     Text="Button 1 URL"
+                     IsEnabled="false"
+                     Style="{StaticResource ModernTextbox}"/>
         </Grid>
-        <TextBox Grid.Row="5" Grid.Column="1" Margin="8"
+        <TextBox x:Name="Button1Text"
+                 Grid.Row="5" Grid.Column="1" Margin="8"
                  Text="Button 1 Text"
+                 IsEnabled="false"
                  Style="{StaticResource ModernTextbox}"/>
         <Grid Grid.Row="6">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="65"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Column="1" Margin="8"
-                 Text="Button 2 URL"
-                 Style="{StaticResource ModernTextbox}"/>
+            <ToggleButton x:Name="ToggleButton2"
+                Style="{StaticResource ModernToggleButton }"
+                Click="ToggleButton2_Click" Margin="5,0,-5,0"
+                          />
+            <TextBox x:Name="Button2URL"
+                     Grid.Column="1" Margin="8"
+                     Text="Button 2 URL"
+                     IsEnabled="false"
+                     Style="{StaticResource ModernTextbox}"/>
         </Grid>
-        <TextBox Grid.Row="6" Grid.Column="1" Margin="8"
+        <TextBox x:Name="Button2Text"
+                 Grid.Row="6" Grid.Column="1" Margin="8"
+                 IsEnabled="false"
                  Text="Button 2 Text"
                  Style="{StaticResource ModernTextbox}"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="8"
-                 Text="Application ID"
-                 Style="{StaticResource ModernTextbox}"/>
+
         
         <TextBox Grid.Row="1" Grid.Column="2" Margin="8"
-                 Foreground="White"
-                 Background="Gray"
                  Style="{StaticResource ModernTextbox}"/>
+        
+        <Border Grid.Row="7" 
+                Grid.ColumnSpan="2"
+                CornerRadius="15" 
+                Margin="-5" 
+                Background="#ffaaff">
+            <Border CornerRadius="15"
+                    Margin="8" 
+                    Background="Gray"/>
+            
+        </Border>
+        <Grid Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+            <Image 
+                Source="/Assets/infobox.png"
+                ToolTip="TEST"/>
+            <Viewbox Grid.Column="1">
+                <Label Content="Auto Feature"/>
+            </Viewbox>
+            <ToggleButton Grid.Column="2"
+                x:Name="ToggleButtonAuto"
+                Style="{StaticResource ModernToggleButton }"
+                Click="ToggleButtonAuto_Click" Margin="5,0,-5,0"
+                />
+        </Grid>
+        
+
+        <Grid Grid.Row="7" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                    x:Name="BrowseButton"
+                    Click="BrowseButton_Click"
+                    Margin="8"
+                    Style="{StaticResource ModernButton}"/>
+        </Grid>
+
+
     </Grid>
 </UserControl>

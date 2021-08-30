@@ -12,7 +12,6 @@
                 <ResourceDictionary Source="/Themes/StylishScrollbar.xaml"/>
                 <ResourceDictionary Source="/Themes/NotifyIconResources.xaml"/>
                 <ResourceDictionary Source="/Themes/ModernTextbox.xaml"/>
-                <ResourceDictionary Source="/Themes/CheckBox.xaml"/>
                 <ResourceDictionary Source="/Themes/ToggleButton.xaml"/>
                 <ResourceDictionary Source="/Themes/ModernButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>

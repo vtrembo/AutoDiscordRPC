@@ -70,5 +70,10 @@ namespace AutoDiscordRPC.MVVM.View
                 string filename = dialog.FileName;
             }
         }
+
+        private void ToggleButtonAuto_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
