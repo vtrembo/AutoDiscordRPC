@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AutoDiscordRPC.MVVM.View"
              mc:Ignorable="d" 
-             Background="Wheat"
+             
              d:DesignHeight="575" d:DesignWidth="720">
     <!--12-->
     
@@ -31,10 +31,12 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0"
-                Content="Developer Portal"
-                Background="LightBlue"
-                Margin="20"
-                Click="ButtonDevPortal_Click"
+                    Content="Developer Portal"
+                    Background="#5865F2"
+                    Foreground="White"
+                    FontSize="18" FontWeight="SemiBold"
+                    Margin="20" BorderThickness="0"
+                    Click="ButtonDevPortal_Click"
                 >
                 <Button.Resources>
                     <Style TargetType="Border">
@@ -44,9 +46,11 @@
             </Button>
             
             <Button Grid.Column="1"
-                Content="Create Presence"
-                Background="LightBlue"
-                Margin="20"
+                    Content="Create Presence"
+                    Background="#3BA55D"
+                    Margin="20" BorderThickness="0"
+                    Foreground="White"
+                    FontSize="18" FontWeight="SemiBold"
                 
                 >
                 <Button.Resources>
@@ -133,10 +137,10 @@
                 Grid.ColumnSpan="2"
                 CornerRadius="15" 
                 Margin="-5" 
-                Background="#ffaaff">
+                Background="LightGreen">
             <Border CornerRadius="15"
                     Margin="8" 
-                    Background="Gray"/>
+                    Background="Wheat"/>
             
         </Border>
         <Grid Grid.Row="7">
@@ -158,7 +162,6 @@
                 />
         </Grid>
         
-
         <Grid Grid.Row="7" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>

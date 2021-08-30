@@ -38,3 +38,4 @@ C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\ref\
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.pdb
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.genruntimeconfig.cache
 C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\obj\Debug\net5.0-windows\AutoDiscordRPC.csprojAssemblyReference.cache
+C:\Users\sweaz\source\repos\vtrembo\AutoDiscordRPC\bin\Debug\net5.0-windows\Newtonsoft.Json.dll

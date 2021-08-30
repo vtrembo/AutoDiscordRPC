@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "awkNUF9iz0lQRI/CZ/hYe7kT/KuSCe4fyrexpfai98IhxMcBnpE/nA1L+u8yb8scL9xAt8FY/xAay5kJlUsqNQ==",
+  "dgSpecHash": "+FMPXg59CIrQ4pCNPfjrWbFau0DOa0WSG28WmkrSlunaY2dConBHv8LTvmksFlRAZAEBv7sAET5x+xnDbzvEkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sweaz\\source\\repos\\vtrembo\\AutoDiscordRPC\\AutoDiscordRPC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sweaz\\.nuget\\packages\\hardcodet.notifyicon.wpf\\1.1.0\\hardcodet.notifyicon.wpf.1.1.0.nupkg.sha512"
+    "C:\\Users\\sweaz\\.nuget\\packages\\hardcodet.notifyicon.wpf\\1.1.0\\hardcodet.notifyicon.wpf.1.1.0.nupkg.sha512",
+    "C:\\Users\\sweaz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

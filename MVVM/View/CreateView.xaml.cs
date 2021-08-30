@@ -115,5 +115,6 @@ namespace AutoDiscordRPC.MVVM.View
             }
             return name;
         }
+
     }
 }
