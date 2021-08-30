@@ -25,18 +25,39 @@
             <RowDefinition Height="50*"/>
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
-
-        <Button Content="Developer Portal"
+        <Grid Grid.Row="0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                Content="Developer Portal"
                 Background="LightBlue"
                 Margin="20"
                 Click="ButtonDevPortal_Click"
                 >
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            
+            <Button Grid.Column="1"
+                Content="Create Presence"
+                Background="LightBlue"
+                Margin="20"
+                
+                >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+        
+        
 
 
         <TextBox Grid.Row="1" Grid.Column="0" Margin="8"
@@ -106,8 +127,7 @@
                  Style="{StaticResource ModernTextbox}"/>
 
         
-        <TextBox Grid.Row="1" Grid.Column="2" Margin="8"
-                 Style="{StaticResource ModernTextbox}"/>
+        
         
         <Border Grid.Row="7" 
                 Grid.ColumnSpan="2"
@@ -151,6 +171,20 @@
                     Style="{StaticResource ModernButton}"/>
         </Grid>
 
+        <Border Grid.Column="2" 
+                Grid.Row="1"
+                Grid.RowSpan="8"
+                Background="AliceBlue"
+                Margin="20"
+                CornerRadius="20">
+            <Border Background="Wheat"
+                    Margin="20"
+                    CornerRadius="20"
+                    >
+                <Label Content="PREVIEW INCOMING"
+                       FontSize="15"/>
+            </Border>
+        </Border>
 
     </Grid>
 </UserControl>
