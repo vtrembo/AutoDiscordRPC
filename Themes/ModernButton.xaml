@@ -10,7 +10,7 @@
                         <Button Margin="1"
                                 Content="Browse"
                                 BorderThickness="0"
-                                     Background="#353340"
+                                     Background="#3E3D41"
                                      VerticalContentAlignment="Center"
                                      Padding="5" 
                                      Foreground="#CFCFCF">

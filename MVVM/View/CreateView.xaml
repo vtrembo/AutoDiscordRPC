@@ -137,29 +137,28 @@
                 BorderThickness="5"
                 Margin="4" 
                 Background="#36393F"
-                BorderBrush="LightGreen">
+                >
             <Border.Effect>
-                <DropShadowEffect BlurRadius="15" 
+                <DropShadowEffect BlurRadius="10" 
                                   Opacity="1" 
-                                  ShadowDepth="1" 
+                                  ShadowDepth="1"
                                   Color="LightGreen"
                                   />
             </Border.Effect>
+            <Border.BorderBrush>
+                <RadialGradientBrush  
+                    GradientOrigin="0.5,0.5" 
+                    Center="0.5,0.5" 
+                    RadiusX="1" RadiusY="1">
+                    <RadialGradientBrush.GradientStops>
+                        <GradientStop Color="#3BA55D" Offset="0" />
+                        <GradientStop Color="#30864C" Offset="1" />
+                    </RadialGradientBrush.GradientStops>
+                </RadialGradientBrush>
+            </Border.BorderBrush>
 
         </Border>
-        <!-- <Border Grid.Row="7" 
-                Grid.ColumnSpan="2"
-                CornerRadius="15" 
-                Margin="-5" BorderThickness="5"
-                
-                Background="LightGreen">
-            <Border.Effect>
-                <BlurEffect Radius="4"/>
-            </Border.Effect>
-            <Border CornerRadius="15"
-                    Margin="4" 
-                    Background="#36393F"/>
-        </Border>-->
+
         
         <Grid Grid.Row="7">
             <Grid.ColumnDefinitions>
@@ -175,7 +174,7 @@
                 <Label Content="Auto Feature"
                        FontSize="15"
                        FontWeight="SemiBold"
-                       Foreground="#101010"/>
+                       Foreground="#CFCFCF"/>
             </Viewbox>
             <ToggleButton Grid.Column="2"
                 x:Name="ToggleButtonAuto"
@@ -192,8 +191,20 @@
             <Button Grid.Column="0"
                     x:Name="BrowseButton"
                     Click="BrowseButton_Click"
-                    Margin="0,12"
+                    Margin="10,17"
                     Style="{StaticResource ModernButton}"/>
+
+            <Border Grid.Column="1"
+                    Background="#3E3D41"
+                    Margin="0,17,15,17"
+                    CornerRadius="10">
+                <Label  x:Name="BrowseLable"
+                        VerticalAlignment="Center"
+                        Margin="4,0,0,0"
+                        Content="exe name"
+                        Foreground="LightGray"/>
+            </Border>
+
         </Grid>
 
         <Border Grid.Column="2" 
