@@ -130,19 +130,37 @@
                  Text="Button 2 Text"
                  Style="{StaticResource ModernTextbox}"/>
 
-        
-        
-        
+
         <Border Grid.Row="7" 
                 Grid.ColumnSpan="2"
                 CornerRadius="15" 
-                Margin="-5" 
-                Background="LightGreen">
-            <Border CornerRadius="15"
-                    Margin="8" 
-                    Background="Wheat"/>
-            
+                BorderThickness="5"
+                Margin="4" 
+                Background="#36393F"
+                BorderBrush="LightGreen">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" 
+                                  Opacity="1" 
+                                  ShadowDepth="1" 
+                                  Color="LightGreen"
+                                  />
+            </Border.Effect>
+
         </Border>
+        <!-- <Border Grid.Row="7" 
+                Grid.ColumnSpan="2"
+                CornerRadius="15" 
+                Margin="-5" BorderThickness="5"
+                
+                Background="LightGreen">
+            <Border.Effect>
+                <BlurEffect Radius="4"/>
+            </Border.Effect>
+            <Border CornerRadius="15"
+                    Margin="4" 
+                    Background="#36393F"/>
+        </Border>-->
+        
         <Grid Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="40*"/>
@@ -151,9 +169,13 @@
             </Grid.ColumnDefinitions>
             <Image 
                 Source="/Assets/infobox.png"
-                ToolTip="TEST"/>
+                ToolTip="TEST"
+                Margin="15,2,2,2"/>
             <Viewbox Grid.Column="1">
-                <Label Content="Auto Feature"/>
+                <Label Content="Auto Feature"
+                       FontSize="15"
+                       FontWeight="SemiBold"
+                       Foreground="#101010"/>
             </Viewbox>
             <ToggleButton Grid.Column="2"
                 x:Name="ToggleButtonAuto"
@@ -170,7 +192,7 @@
             <Button Grid.Column="0"
                     x:Name="BrowseButton"
                     Click="BrowseButton_Click"
-                    Margin="8"
+                    Margin="0,12"
                     Style="{StaticResource ModernButton}"/>
         </Grid>
 
