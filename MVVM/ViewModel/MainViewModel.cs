@@ -61,13 +61,13 @@ namespace AutoDiscordRPC.MVVM.ViewModel
             {
                 Name = "Hello",
                 Details = "There",
-                ImageSource = "https://i.imgur.com/n6ujM4H.png"
+                ImageSource = "/Assets/auto.png"
             });
             Presences.Add(new Presence
             {
                 Name = "Hello",
                 Details = "World",
-                ImageSource = "Images/вал2.png"
+                ImageSource = "https://i.imgur.com/j1Q4azn.png"
             });
         }
     }

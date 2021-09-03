@@ -19,19 +19,22 @@
                         <StackPanel Orientation="Horizontal"
                                     Margin="10,0,0,0">
 
-
-
                             <Ellipse Height="30" Width="30">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="{Binding ImageSource}"/>
                                 </Ellipse.Fill>
                             </Ellipse>
-                            <StackPanel>
+                            <StackPanel Margin="4,0,0,0">
                                 <Label Content="{Binding Name}"
                                        Foreground="White"/>
-                                <Label Content="{Binding Details}"
+                                <StackPanel Orientation="Horizontal">
+                                    <Image  Height="18" Width="18"
+                                            Source="/Assets/auto.png"/>
+                                    <Label Content="{Binding Details}"
                                        Foreground="Gray"
                                        FontSize="10"/>
+                                </StackPanel>
+
                             </StackPanel>
                         </StackPanel>
                     </Border>

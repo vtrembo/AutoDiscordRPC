@@ -133,44 +133,56 @@
 
         <Border Grid.Row="7" 
                 Grid.ColumnSpan="2"
-                CornerRadius="15" 
+                CornerRadius="10" 
                 BorderThickness="5"
-                Margin="4" 
+                Margin="4"
                 Background="#36393F"
                 >
             <Border.Effect>
                 <DropShadowEffect BlurRadius="10" 
                                   Opacity="1" 
                                   ShadowDepth="1"
-                                  Color="LightGreen"
+                                  Color="#292b2f"
                                   />
             </Border.Effect>
             <Border.BorderBrush>
+                
                 <RadialGradientBrush  
                     GradientOrigin="0.5,0.5" 
                     Center="0.5,0.5" 
                     RadiusX="1" RadiusY="1">
                     <RadialGradientBrush.GradientStops>
-                        <GradientStop Color="#3BA55D" Offset="0" />
-                        <GradientStop Color="#30864C" Offset="1" />
+                        <GradientStop Color="#36393F" Offset="0" />
+                        <GradientStop Color="#292b2f" Offset="1" />
                     </RadialGradientBrush.GradientStops>
                 </RadialGradientBrush>
             </Border.BorderBrush>
 
         </Border>
 
-        
+
         <Grid Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="40*"/>
                 <ColumnDefinition Width="120*"/>
                 <ColumnDefinition Width="80*"/>
             </Grid.ColumnDefinitions>
-            <Image 
-                Source="/Assets/infobox.png"
-                ToolTip="TEST"
-                Margin="15,2,2,2"/>
-            <Viewbox Grid.Column="1">
+            <Image>
+                <Image.Resources>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Margin" Value="15,2,2,2"/>
+                        <Setter Property="Source" Value="/Assets/infobox.png"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Margin" Value="13,0,0,0"/>
+                                <Setter Property="Source" Value="/Assets/infobox.png"/>
+                                <Setter Property="ToolTip" Value="Presence will start automaticly with browsed exe file"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+                <Viewbox Grid.Column="1">
                 <Label Content="Auto Feature"
                        FontSize="15"
                        FontWeight="SemiBold"
@@ -207,7 +219,7 @@
 
         </Grid>
 
-        <Border Grid.Column="2" 
+        <Border Grid.Column="2"
                 Grid.Row="1"
                 Grid.RowSpan="8"
                 Background="AliceBlue"
@@ -218,9 +230,10 @@
                     CornerRadius="20"
                     >
                 <Label Content="PREVIEW INCOMING"
+                       VerticalContentAlignment="Center"
                        FontSize="15"/>
             </Border>
         </Border>
-
+        
     </Grid>
 </UserControl>

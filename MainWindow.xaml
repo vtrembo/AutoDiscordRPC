@@ -39,8 +39,8 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200*" MaxWidth="250"/>
+            <ColumnDefinition Width="720*"/>
         </Grid.ColumnDefinitions>
 
         
@@ -132,7 +132,7 @@
                    HorizontalAlignment="Left"
                    FontWeight="Medium"
                    FontSize="18"
-                   Foreground="Gray"
+                   Foreground="#CFCFCF"
                    Margin="8,0,0,0"
                    />
             </StackPanel>
@@ -168,7 +168,7 @@
             <Image>
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
-                        <Setter Property="Margin" Value="0,20,0,20"/>
+                        <Setter Property="Margin" Value="0,15,0,15"/>
                         <Setter Property="Source" Value="Assets/addButton1.png"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -57,9 +58,9 @@ namespace AutoDiscordRPC.MVVM.View
         private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new Microsoft.Win32.OpenFileDialog();
-            dialog.FileName = "Document"; // Default file name
-            dialog.DefaultExt = ".txt"; // Default file extension
-            dialog.Filter = "Text documents (.txt)|*.txt"; // Filter files by extension
+            dialog.FileName = "Process"; // Default file name
+            dialog.DefaultExt = ".exe"; // Default file extension
+            dialog.Filter = "Exe files (.exe)|*.exe"; // Filter files by extension
 
             // Show open file dialog box
             bool? result = dialog.ShowDialog();
@@ -67,8 +68,11 @@ namespace AutoDiscordRPC.MVVM.View
             // Process open file dialog box results
             if (result == true)
             {
-                // Open document
-                string filename = dialog.FileName;
+                Match match = Regex.Match(dialog.FileName, @"(?<process>[\w\.-]*)\.exe");
+                if (match.Success)
+                {
+                    BrowseLable.Content = match.Groups[1].Value;
+                }
             }
         }
 
