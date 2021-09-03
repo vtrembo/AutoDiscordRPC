@@ -136,7 +136,7 @@
                 CornerRadius="10" 
                 BorderThickness="5"
                 Margin="4"
-                Background="#36393F"
+                Background="#4C949494"
                 >
             <Border.Effect>
                 <DropShadowEffect BlurRadius="10" 

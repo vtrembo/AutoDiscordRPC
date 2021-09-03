@@ -9,7 +9,7 @@
                         <Rectangle StrokeThickness="1"/>
                         <TextBox Margin="1"
                                      BorderThickness="0"
-                                     Background="#3E3D41"
+                                     Background="#48494D"
                                      VerticalContentAlignment="Center"
                                      Padding="5" 
                                      Foreground="#CFCFCF"
