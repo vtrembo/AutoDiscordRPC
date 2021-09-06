@@ -60,7 +60,7 @@ namespace AutoDiscordRPC.MVVM.ViewModel
             Presences.Add(new Presence
             {
                 Name = "Hello",
-                Details = "There",
+                Details = "Test",
                 ImageSource = "/Assets/auto.png"
             });
             Presences.Add(new Presence
