@@ -11,9 +11,6 @@ using System.Windows;
 
 namespace AutoDiscordRPC
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
 
