@@ -34,10 +34,14 @@ namespace AutoDiscordRPC
         {
             while (true)
             {
-                bool isRunning = Process.GetProcessesByName("HotA_launcher")
-                    .FirstOrDefault(p => p.MainModule.FileName.StartsWith(@"C:\Sweazy\FUN\Heroes 3\Hota")) != default(Process);
-                if (isRunning)
-                {
+                /*                bool isRunning = Process.GetProcessesByName("HotA_launcher")
+                                    .FirstOrDefault(p => p.MainModule.FileName.StartsWith(@"C:\Sweazy\FUN\Heroes 3\Hota")) != default(Process);
+                                if (isRunning)
+                                {
+                                    Process process = Process.Start("cmd.exe");
+                                }*/
+                Process[] pname = Process.GetProcessesByName("ColorPix");
+                if (pname.Length != 0) {
                     Process process = Process.Start("cmd.exe");
                 }
                 Thread.Sleep(1000);
