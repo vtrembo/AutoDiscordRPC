@@ -7,8 +7,7 @@
              mc:Ignorable="d" 
              
              d:DesignHeight="575" d:DesignWidth="720">
-    <!--12-->
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="240*"/>
@@ -68,7 +67,6 @@
                     Content="Create Presence"
                     Margin="20" BorderThickness="0"
                     FontSize="18" FontWeight="SemiBold"
-                
                 >
                 <Button.Resources>
                     <Style TargetType="Border">

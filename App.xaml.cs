@@ -40,7 +40,7 @@ namespace AutoDiscordRPC
                                 {
                                     Process process = Process.Start("cmd.exe");
                                 }*/
-                Process[] pname = Process.GetProcessesByName("ColorPix");
+                Process[] pname = Process.GetProcessesByName("HotA_launcher");
                 if (pname.Length != 0) {
                     Process process = Process.Start("cmd.exe");
                 }

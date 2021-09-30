@@ -10,11 +10,10 @@
   -->
     <ContextMenu x:Shared="false" x:Key="SysTrayMenu">
         <MenuItem Header="Exit" 
-                  Background="Gray" Foreground="White" 
-                  BorderThickness="0" 
                   FontWeight="Bold"
-                  FontSize="14"
-                  Command="{Binding ExitApplicationCommand}" />
+                  FontSize="12"
+                  Command="{Binding ExitApplicationCommand}">
+        </MenuItem>
     </ContextMenu>
 
 
